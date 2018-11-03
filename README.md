@@ -7,7 +7,13 @@
 
 ## Overview
 
-In this lab, we'll be dealing with a `Song` class. The `Song` class can produce individual songs. Each song has a name, an artist and a genre. We need our `Song` class to be able to keep track of the number of songs that it creates.
+In this lab, we'll be dealing with a `Song` class.
+
+ The `Song` class can produce individual songs.
+
+Each song has a name, an artist and a genre.
+
+We need our `Song` class to be able to keep track of the number of songs that it creates.
 
 ```ruby
 Song.count
@@ -53,8 +59,8 @@ We'll accomplish this with the use of class variables and methods.
 
 ## Instructions
 
-* Define your `Song` class such that an individual song is initialized with a name, artist and genre.
-* There should be an `attr_accessor` for those three attributes.
+<!-- * Define your `Song` class such that an individual song is initialized with a name, artist and genre.
+* There should be an `attr_accessor` for those three attributes. -->
 
 ```ruby
 ninety_nine_problems = Song.new("99 Problems", "Jay-Z", "rap")
@@ -87,6 +93,6 @@ Song.genre_count
 
 This manner of displaying numerical data is called a [histogram](https://en.wikipedia.org/wiki/Histogram). How will you create your histogram? You will need to iterate over the `@@genres` array and populate a hash with the key/value pairs. You will need to check to see if the hash already contains a key of a particular genre. If so, increment the value of that key by one, otherwise, create a new key/value pair.
 
-* Write a class method, `.artist_count`, that returns a histogram similar to the one above, but for artists rather than genres. 
+* Write a class method, `.artist_count`, that returns a histogram similar to the one above, but for artists rather than genres.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/ruby-class-variables-and-class-methods-lab'>Class Variables and Methods Lab</a> on Learn.co and start learning to code for free.</p>
